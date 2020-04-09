@@ -63,7 +63,7 @@ function statement(invoice, plays) {
     }석)\n`;
     totalAmount += amountFor(perf);
   }
-  result += `총액: ${format(totalAmount / 100)}\n`;
+  result += `총액: ${usd(totalAmount)}\n`;
   result += `적립 포인트: ${totalVolumeCredits()}점\n`;
   return result;
 }
