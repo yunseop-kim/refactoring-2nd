@@ -8,7 +8,6 @@ function statement(invoice, plays) {
 
   function amountFor(aPerformance) {
     let result = 0;
-    console.log(playFor(aPerformance));
     switch (playFor(aPerformance).type) {
       case "tragedy":
         result = 40000;
